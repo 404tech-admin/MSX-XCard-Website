@@ -4,13 +4,12 @@
       background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
     `"
   >
-    <!-- :bgImage="'/image/page/banner/home.png'" -->
     <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
     </page-banner-video>
   </div>
 
   <div class="bg-black h-[20vh]">
-    <div class="grid grid-cols-3 gap-5 containerBootstrap">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 containerBootstrap">
       <div></div>
 
       <div class="card bg-[#bcff2f40] w-full shadow-sm">
