@@ -1,0 +1,268 @@
+$primary-bg-color: #1d2429;
+$secondary-bg-color: #111a1e;
+
+$primary-text-color: white;
+
+.primary-bg-color {
+  background-color: $primary-bg-color;
+}
+
+.secondary-bg-color {
+  background-color: $secondary-bg-color;
+}
+
+.primary-text-color {
+  color: $primary-text-color;
+}
+
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.inter-thin-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.inter-light-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inter-regular-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inter-bold-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.inter-black-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+//  TITLE FONTS
+//  TITLE FONTS
+//  TITLE FONTS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+.containerBootstrap,
+.containerBootstrap-fluid,
+.containerBootstrap-sm,
+.containerBootstrap-md,
+.containerBootstrap-lg,
+.containerBootstrap-xl,
+.containerBootstrap-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1rem);
+  padding-left: var(--bs-gutter-x, 1rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .containerBootstrap,
+  .containerBootstrap-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1300px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1500px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1600px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1500px;
+  }
+}
+@media (min-width: 1700px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1800px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1900px) {
+  .containerBootstrap,
+  .containerBootstrap-sm,
+  .containerBootstrap-md,
+  .containerBootstrap-lg,
+  .containerBootstrap-xl,
+  .containerBootstrap-xxl {
+    max-width: 1600px;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.msx-btn {
+  background: #bcff2f;
+  color: black;
+  border-radius: 8px;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.msx-btn-sm {
+  height: 40px;
+  padding-left: 36px;
+  padding-right: 36px;
+  font-size: 16px;
+}
