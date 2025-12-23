@@ -8,7 +8,7 @@
     </page-banner-video>
   </div>
 
-  <div class="bg-black h-[20vh]">
+  <div class="bg-black h-full lg:h-[20vh]">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 containerBootstrap">
       <div></div>
 
@@ -67,7 +67,9 @@
       :isCustomHeight="'60vh'"
     >
       <template v-slot:contentBox>
-        <div class="relative grid grid-cols-2 w-full h-full containerBootstrap">
+        <div
+          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+        >
           <div class="flex justify-center items-start flex-col">
             <div class="text-4xl font-bold">We Have The</div>
             <div class="text-4xl font-bold">Most Users All Over</div>
@@ -84,7 +86,7 @@
 
   <div class="bg-black">
     <div class="containerBootstrap py-40 flex flex-col gap-20">
-      <div class="grid grid-cols-2 gap-5">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="flex justify-start items-start flex-col">
           <div class="text-4xl font-bold">Our Services</div>
           <div class="text-4xl font-bold">Anywhere & Anytime</div>
@@ -97,7 +99,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div class="card w-full shadow-sm">
           <figure>
             <img src="/image/page/home/carousel.png" alt="Shoes" />
@@ -183,12 +185,14 @@
       :isCustomHeight="'60vh'"
     >
       <template v-slot:contentBox>
-        <div class="relative grid grid-cols-2 w-full h-full containerBootstrap">
+        <div
+          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+        >
           <div class="flex justify-center items-center h-full">
             <img src="/image/page/home/phone.png" />
           </div>
 
-          <div class="flex justify-center items-end flex-col">
+          <div class="flex justify-center lg:items-end items-center flex-col">
             <div class="text-4xl font-bold">Easier & Hassle-Free</div>
             <div class="text-4xl font-bold">Invoice Control</div>
           </div>
@@ -210,7 +214,9 @@
       :isCustomHeight="'80vh'"
     >
       <template v-slot:contentBox>
-        <div class="relative grid grid-cols-2 w-full h-full containerBootstrap">
+        <div
+          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+        >
           <div class="flex justify-center flex-col">
             <div class="text-4xl font-bold">Get Ready To Have</div>
             <div class="text-4xl font-bold">Best Smart</div>
@@ -218,7 +224,9 @@
             <div class="text-4xl font-bold">in The World</div>
           </div>
 
-          <div class="flex justify-end items-end">
+          <div
+            class="flex lg:justify-end justify-center items-center lg:items-end"
+          >
             <img src="/image/page/home/card_two.png" />
           </div>
         </div>
