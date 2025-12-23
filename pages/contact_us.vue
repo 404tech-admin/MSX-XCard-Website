@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black">
+  <div class="bg-black text-white">
     <div class="flex flex-col gap-[40px] px-[16px] lg:gap-0">
       <div
         class="flex h-[180px] flex-col justify-center bg-cover bg-center"
@@ -14,10 +14,10 @@
       </div>
 
       <div
-        class="px-auto mx-auto mb-[80px] grid max-w-[1152px] grid-cols-2 gap-[40px] lg:grid-cols-2"
+        class="px-auto mx-auto mb-[80px] grid max-w-[1152px] grid-cols-1 gap-[40px] lg:grid-cols-2"
       >
         <div
-          class="h-[278px] w-[556px] rounded-[16px] border border-[--color-border-line] px-[40px] py-[40px] xl:w-auto"
+          class="h-full w-full rounded-[16px] border px-[40px] py-[40px] xl:w-auto"
         >
           <img
             alt=""
@@ -29,20 +29,17 @@
             src="data:image/png;base64,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"
           />
           <div class="mb-[8px] text-[20px] font-medium">Contact Email</div>
-          <div class="mb-[16px] w-auto text-[16px] text-[--color-text-subtle]">
+          <div class="mb-[16px] w-auto text-[16px]">
             Please send your inquiries to our support email
           </div>
           <div class="">
-            <p class="text-[--color-text-green-deep] cursor-pointer">
-              info@msx.com
-            </p>
-            <p class="text-[--color-text-subtle]">
-              Reply within 24 hours on weekdays
-            </p>
+            <p class="cursor-pointer">info@msx.com</p>
+            <p class="">Reply within 24 hours on weekdays</p>
           </div>
         </div>
+
         <div
-          class="h-[278px] w-[556px] rounded-[16px] border border-[--color-border-line] px-[40px] py-[40px] xl:w-auto"
+          class="h-full w-full rounded-[16px] border px-[40px] py-[40px] xl:w-auto"
         >
           <img
             alt=""
@@ -52,15 +49,16 @@
           <div class="mb-[8px] text-[20px] font-medium">
             Online Customer Service
           </div>
-          <div class="mb-[16px] w-auto text-[16px] text-[--color-text-subtle]">
+          <div class="mb-[16px] w-auto text-[16px]">
             Click to contact support
           </div>
           <div class="">
-            <p class="text-[--color-text-green-deep] cursor-pointer"></p>
+            <p class="cursor-pointer"></p>
           </div>
         </div>
+
         <div
-          class="h-[278px] w-[556px] rounded-[16px] border border-[--color-border-line] px-[40px] py-[40px] xl:w-auto"
+          class="h-full w-full rounded-[16px] border px-[40px] py-[40px] xl:w-auto"
         >
           <img
             alt=""
@@ -68,18 +66,19 @@
             src="data:image/png;base64,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"
           />
           <div class="mb-[8px] text-[20px] font-medium">Telegram Community</div>
-          <div class="mb-[16px] w-auto text-[16px] text-[--color-text-subtle]">
+          <div class="mb-[16px] w-auto text-[16px]">
             Join our Telegram community for the latest updates
           </div>
           <button
             type="button"
-            class="ant-btn css-ssgg9n ant-btn-round ant-btn-ghost ant-btn-lg h-[38px] border-[--color-text] py-[8px] text-[14px] [&amp;.ant-btn.ant-btn-round.ant-btn-md]:pl-[32px] [&amp;.ant-btn.ant-btn-round.ant-btn-md]:pr-[32px]"
+            class="ant-btn css-ssgg9n ant-btn-round ant-btn-ghost ant-btn-lg h-[38px] py-[8px] text-[14px] [&amp;.ant-btn.ant-btn-round.ant-btn-md]:pl-[32px] [&amp;.ant-btn.ant-btn-round.ant-btn-md]:pr-[32px]"
           >
             <span>Join Community</span>
           </button>
         </div>
+
         <div
-          class="h-[278px] w-[556px] rounded-[16px] border border-[--color-border-line] px-[40px] py-[40px] xl:w-auto"
+          class="h-full w-full rounded-[16px] border px-[40px] py-[40px] xl:w-auto"
         >
           <img
             alt=""
@@ -91,12 +90,12 @@
             src="data:image/png;base64,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"
           />
           <div class="mb-[8px] text-[20px] font-medium">Social Media</div>
-          <div class="mb-[16px] w-auto text-[16px] text-[--color-text-subtle]">
+          <div class="mb-[16px] w-auto text-[16px]">
             Follow our X account for the latest news
           </div>
           <div class="">
             <p
-              class="rounded-[8px] bg-[--color-background-primary50] px-[12px] py-[12px] text-[--color-text-green-deep] cursor-pointer"
+              class="rounded-[8px] bg-[--color-background-primary50] px-[12px] py-[12px] cursor-pointer"
             >
               @MSX_COM
             </p>

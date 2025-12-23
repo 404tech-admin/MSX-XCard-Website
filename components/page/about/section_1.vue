@@ -5,7 +5,7 @@
       style="background-image: url('/image/page/about/top_bg-CDD65lnQ.png')"
     >
       <div
-        class="mx-auto flex w-full max-w-[1200px] items-center justify-center gap-20 pr-[38px] lg:flex-col-reverse lg:items-start lg:gap-6 lg:px-6"
+        class="mx-auto flex w-full max-w-[1200px] items-center justify-center gap-20 lg:flex-col-reverse lg:items-start lg:gap-6 lg:px-6"
       >
         <div
           class="pointer-events-none relative mt-10 flex w-full flex-col items-center justify-center text-[60px]"

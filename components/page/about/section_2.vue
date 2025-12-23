@@ -1,11 +1,11 @@
 <template>
   <div class="bg-black">
     <div
-      class="mx-auto flex max-w-[1200px] items-center gap-[137px] pt-[128px] lg:gap-[40px] lg:px-[24px] lg:pt-[80px]"
+      class="mx-auto flex max-w-[1200px] lg:flex-row flex-col items-center lg:pt-[128px] gap-[137px] lg:gap-[40px] px-[24px] pt-[80px]"
     >
-      <div class="flex w-7/12 flex-col gap-[16px] lg:w-full">
+      <div class="flex flex-col gap-[16px] w-full">
         <div
-          class="move-up flex gap-[16px]"
+          class="flex flex-col lg:flex-row gap-[16px]"
           style="
             translate: none;
             rotate: none;
@@ -15,56 +15,31 @@
           "
         >
           <div
-            class="cursor-pointer overflow-hidden rounded-[22px] border bg-[--color-background-primary80] p-[32px] transition-all duration-300 lg:p-[20px] h-[260px] w-3/5 border-[--color-border-solid]"
+            v-for="(item, index) in gridList1"
+            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
+            @click="selectedGrid = item.id"
+            :class="[
+              selectedGrid == item.id ? 'lg:w-3/5 w-full' : 'lg:w-2/5 w-full',
+              selectedGrid != 1 && selectedGrid != 2 ? 'w-full lg:w-1/2!' : '',
+            ]"
           >
-            <!-- <iconpark-icon
-              class="block dark:hidden"
-              name="defi1"
-              icon-id=""
-              size="36"
-            ></iconpark-icon
-            ><iconpark-icon
-              class="hidden dark:block"
-              name="defidark1"
-              icon-id=""
-              size="36"
-            ></iconpark-icon> -->
-            <p class="text-[20px] font-bold lg:text-[16px]">
-              Flexible positions, no rollover
-            </p>
-            <p class="mt-[12px]">
-              Strategy flexibility, no contract expiry pressure
-            </p>
-          </div>
-          <div
-            class="cursor-pointer overflow-hidden rounded-[22px] border bg-[--color-background-primary80] p-[32px] transition-all duration-300 lg:p-[20px] h-[260px] w-2/5 border-[--color-border-line-more]"
-          >
-            <!-- <iconpark-icon
-              class="block dark:hidden"
-              name="defi2"
-              icon-id=""
-              size="36"
-            ></iconpark-icon
-            ><iconpark-icon
-              class="hidden dark:block"
-              name="defidark2"
-              icon-id=""
-              size="36"
-            ></iconpark-icon>
-            <p class="text-[20px] font-bold lg:text-[16px]">
-              High leverage, long &amp; short trading
-            </p>
-            <iconpark-icon
-              class="mt-[12px]"
-              name="home10"
-              icon-id=""
-              size="24"
-              color="var(--color-text)"
-            ></iconpark-icon> -->
+            <img :src="item.icon" class="w-9" />
+
+            <div class="flex flex-col gap-2">
+              <p class="text-[20px] font-bold">{{ item.title }}</p>
+              <p :class="selectedGrid == item.id ? 'flex' : 'lg:hidden'">
+                {{ item.subtitle }}
+              </p>
+
+              <div class="hidden lg:flex">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+            </div>
           </div>
         </div>
+
         <div
-          class="move-up flex gap-[16px]"
+          class="flex flex-col lg:flex-row gap-[16px]"
           style="
             translate: none;
             rotate: none;
@@ -74,63 +49,31 @@
           "
         >
           <div
-            class="cursor-pointer overflow-hidden rounded-[22px] border bg-[--color-background-primary80] p-[32px] transition-all duration-300 lg:p-[20px] h-[260px] w-1/2 border-[--color-border-line-more]"
+            v-for="(item, index) in gridList2"
+            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
+            @click="selectedGrid = item.id"
+            :class="[
+              selectedGrid == item.id ? 'lg:w-3/5 w-full' : 'lg:w-2/5 w-full',
+              selectedGrid != 3 && selectedGrid != 4 ? 'w-full lg:w-1/2!' : '',
+            ]"
           >
-            <!-- <iconpark-icon
-              class="block dark:hidden"
-              name="defi3"
-              icon-id=""
-              size="36"
-            ></iconpark-icon
-            ><iconpark-icon
-              class="hidden dark:block"
-              name="defidark3"
-              icon-id=""
-              size="36"
-            ></iconpark-icon>
-            <p class="text-[20px] font-bold lg:text-[16px]">
-              Deep liquidity, low slippage
-            </p>
-            <iconpark-icon
-              class="mt-[12px]"
-              name="home10"
-              icon-id=""
-              size="24"
-              color="var(--color-text)"
-            ></iconpark-icon> -->
-          </div>
-          <div
-            class="cursor-pointer overflow-hidden rounded-[22px] border bg-[--color-background-primary80] p-[32px] transition-all duration-300 lg:p-[20px] h-[260px] w-1/2 border-[--color-border-line-more]"
-          >
-            <!-- <iconpark-icon
-              class="block dark:hidden"
-              name="defi4"
-              icon-id=""
-              size="36"
-            ></iconpark-icon
-            ><iconpark-icon
-              class="hidden dark:block"
-              name="defidark4"
-              icon-id=""
-              size="36"
-            ></iconpark-icon>
-            <p class="text-[20px] font-bold lg:text-[16px]">
-              Stable liquidation and controllable risks
-            </p>
-            <iconpark-icon
-              class="mt-[12px]"
-              name="home10"
-              icon-id=""
-              size="24"
-              color="var(--color-text)"
-            ></iconpark-icon> -->
+            <img :src="item.icon" class="w-9" />
+
+            <div class="flex flex-col gap-2">
+              <p class="text-[20px] font-bold">{{ item.title }}</p>
+              <p :class="selectedGrid == item.id ? 'flex' : 'lg:hidden'">
+                {{ item.subtitle }}
+              </p>
+
+              <div class="hidden lg:flex">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="w-5/12 lg:w-full flex flex-col gap-8 justify-between items-center"
-      >
+      <div class="w-full flex flex-col gap-8 justify-between items-center">
         <div>
           <div class="overflow-hidden">
             <h1
@@ -148,7 +91,7 @@
           </div>
           <div class="overflow-hidden">
             <p
-              class="fade-item text-[30px] font-bold lg:text-center lg:text-[22px]"
+              class="fade-item text-[30px] font-bold text-center lg:text-[22px]"
               style="
                 translate: none;
                 rotate: none;
@@ -164,7 +107,7 @@
 
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[18px] text-[--color-text-weak] lg:text-center lg:text-[14px]"
+            class="fade-item text-[18px] text-center lg:text-[14px]"
             style="
               translate: none;
               rotate: none;
@@ -191,3 +134,49 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  setup() {
+    const config = useRuntimeConfig();
+    const { locale } = useI18n();
+
+    return { config, locale };
+  },
+  data() {
+    return {
+      selectedGrid: 1,
+      gridList1: [
+        {
+          id: 1,
+          icon: "/image/page/about/svg/icon1.svg",
+          title: "Flexible positions, no rollover",
+          subtitle: "Strategy flexibility, no contract expiry pressure",
+        },
+        {
+          id: 2,
+          icon: "/image/page/about/svg/icon2.svg",
+          title: "High leverage, long & short trading",
+          subtitle: "Go long or short, easily capture market ups and downs",
+        },
+      ],
+      gridList2: [
+        {
+          id: 3,
+          icon: "/image/page/about/svg/icon3.svg",
+          title: "Deep liquidity, low slippage",
+          subtitle:
+            "Efficient matching, trade prices closely follow the market",
+        },
+        {
+          id: 4,
+          icon: "/image/page/about/svg/icon4.svg",
+          title: "Stable liquidation and controllable risks",
+          subtitle:
+            "Multi-source oracle quotes to avoid incorrect liquidations caused by abnormal fluctuations",
+        },
+      ],
+    };
+  },
+};
+</script>

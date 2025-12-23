@@ -5,25 +5,8 @@
     `"
   >
     <!-- :bgImage="'/image/page/banner/home.png'" -->
-    <page-banner-basic
-      :id="'02'"
-      :backgroundPosition="'50%, 50% 100%'"
-      :bgColor="'bg-transparent'"
-      :isCustomHeight="'80vh'"
-    >
-      <template v-slot:contentBox>
-        <div class="relative grid grid-cols-2 w-full h-full containerBootstrap">
-          <div class="flex justify-center flex-col">
-            <div class="text-4xl font-bold">Smart Payments</div>
-            <div class="text-4xl font-bold">Anyway, Anytime.</div>
-          </div>
-
-          <div class="flex justify-end items-end h-full">
-            <img src="/image/page/home/card.png" />
-          </div>
-        </div>
-      </template>
-    </page-banner-basic>
+    <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
+    </page-banner-video>
   </div>
 
   <div class="bg-black h-[20vh]">

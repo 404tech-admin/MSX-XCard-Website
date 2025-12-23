@@ -50,7 +50,7 @@
       <NuxtLink
         :to="locale === 'cn' ? '/' : `/${locale}`"
         class="text-lg lg:text-xl"
-        ><img src="/image/logo/logo.png" class="w-10 h-10"
+        ><img src="/image/logo/logo.png" class="h-10"
       /></NuxtLink>
     </div>
 

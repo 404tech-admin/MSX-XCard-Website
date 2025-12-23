@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto pt-32 lg:pt-20 bg-black">
+  <div class="mx-auto pt-32 lg:pt-[200px] bg-black">
     <h1
       class="move-up text-center text-[48px] font-bold lg:text-[36px]"
       style="
