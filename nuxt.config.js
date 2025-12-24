@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1",
-      title: "DefQuantum Trading Dashboard",
+      title: "MSX X-Card",
       meta: [
         { name: "description", content: "MCR" },
         { charset: "utf-8" },
@@ -57,7 +57,6 @@ export default defineNuxtConfig({
     public: {
       env: process.env.NODE_ENV,
       localUrl: "http://localhost:3000/",
-      apiUrl: "https://www.defquantum.com/api/v1/",
       connectedWallet: "connectedWallet",
     },
   },
