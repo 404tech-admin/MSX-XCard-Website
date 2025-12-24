@@ -1,19 +1,43 @@
 <template>
+  <div class="relative bg-black">
+    <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
+    </page-banner-video>
+  </div>
+
   <div
     :style="`
       background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
     `"
   >
-    <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
-    </page-banner-video>
+    <page-banner-basic
+      :backgroundPosition="'50%, 50% 100%'"
+      :id="'02'"
+      :bgImage="'/image/page/home/xcard_1.jpeg'"
+      :bgColor="'bg-transparent'"
+    >
+    </page-banner-basic>
+  </div>
+
+  <div
+    :style="`
+      background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
+    `"
+  >
+    <page-banner-basic
+      :backgroundPosition="'50%, 50% 100%'"
+      :id="'02'"
+      :bgImage="'/image/page/home/xcard_2.jpeg'"
+      :bgColor="'bg-transparent'"
+    >
+    </page-banner-basic>
   </div>
 
   <div class="bg-black h-full lg:h-[20vh]">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 containerBootstrap">
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3 containerBootstrap">
       <div></div>
 
       <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="card-body gap-5">
+        <div class="gap-5 card-body">
           <h2 class="card-title">Card Title</h2>
           <p>
             A card component has a figure, a body part, and inside body there
@@ -33,7 +57,7 @@
       </div>
 
       <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="card-body gap-5">
+        <div class="gap-5 card-body">
           <h2 class="card-title">Card Title</h2>
           <p>
             A card component has a figure, a body part, and inside body there
@@ -68,9 +92,9 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
         >
-          <div class="flex justify-center items-start flex-col">
+          <div class="flex flex-col justify-center items-start">
             <div class="text-4xl font-bold">We Have The</div>
             <div class="text-4xl font-bold">Most Users All Over</div>
             <div class="text-4xl font-bold">The World</div>
@@ -85,9 +109,9 @@
   </div>
 
   <div class="bg-black">
-    <div class="containerBootstrap py-40 flex flex-col gap-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div class="flex justify-start items-start flex-col">
+    <div class="flex flex-col gap-20 py-40 containerBootstrap">
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <div class="flex flex-col justify-start items-start">
           <div class="text-4xl font-bold">Our Services</div>
           <div class="text-4xl font-bold">Anywhere & Anytime</div>
         </div>
@@ -99,12 +123,12 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div class="card w-full shadow-sm">
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+        <div class="w-full shadow-sm card">
           <figure>
             <img src="/image/page/home/carousel.png" alt="Shoes" />
           </figure>
-          <div class="card-body gap-5">
+          <div class="gap-5 card-body">
             <h2 class="card-title">Card Title</h2>
             <p>
               A card component has a figure, a body part, and inside body there
@@ -123,11 +147,11 @@
           </div>
         </div>
 
-        <div class="card w-full shadow-sm">
+        <div class="w-full shadow-sm card">
           <figure>
             <img src="/image/page/home/carousel.png" alt="Shoes" />
           </figure>
-          <div class="card-body gap-5">
+          <div class="gap-5 card-body">
             <h2 class="card-title">Card Title</h2>
             <p>
               A card component has a figure, a body part, and inside body there
@@ -146,11 +170,11 @@
           </div>
         </div>
 
-        <div class="card w-full shadow-sm">
+        <div class="w-full shadow-sm card">
           <figure>
             <img src="/image/page/home/carousel.png" alt="Shoes" />
           </figure>
-          <div class="card-body gap-5">
+          <div class="gap-5 card-body">
             <h2 class="card-title">Card Title</h2>
             <p>
               A card component has a figure, a body part, and inside body there
@@ -186,13 +210,13 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex justify-center items-center h-full">
             <img src="/image/page/home/phone.png" />
           </div>
 
-          <div class="flex justify-center lg:items-end items-center flex-col">
+          <div class="flex flex-col justify-center items-center lg:items-end">
             <div class="text-4xl font-bold">Easier & Hassle-Free</div>
             <div class="text-4xl font-bold">Invoice Control</div>
           </div>
@@ -215,9 +239,9 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid grid-cols-1 lg:grid-cols-2 w-full h-full containerBootstrap"
+          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
         >
-          <div class="flex justify-center flex-col">
+          <div class="flex flex-col justify-center">
             <div class="text-4xl font-bold">Get Ready To Have</div>
             <div class="text-4xl font-bold">Best Smart</div>
             <div class="text-4xl font-bold">Payments</div>
@@ -225,7 +249,7 @@
           </div>
 
           <div
-            class="flex lg:justify-end justify-center items-center lg:items-end"
+            class="flex justify-center items-center lg:justify-end lg:items-end"
           >
             <img src="/image/page/home/card_two.png" />
           </div>
