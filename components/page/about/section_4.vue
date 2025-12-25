@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto pt-32 lg:pt-[200px] bg-black">
     <h1
-      class="move-up text-center text-[48px] font-bold lg:text-[36px]"
+      class="move-up text-center text-[48px] font-bold"
       style="
         translate: none;
         rotate: none;
@@ -13,7 +13,7 @@
       Investors and Partners
     </h1>
     <p
-      class="move-up mt-1.5 text-center text-[18px] text-[--color-text-weak] lg:text-[14px]"
+      class="move-up mt-1.5 text-center text-[18px]"
       style="
         translate: none;
         rotate: none;

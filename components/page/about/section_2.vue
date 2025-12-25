@@ -16,7 +16,7 @@
         >
           <div
             v-for="(item, index) in gridList1"
-            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
+            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border-[#ffffff12] border p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
             @click="selectedGrid = item.id"
             :class="[
               selectedGrid == item.id ? 'lg:w-3/5 w-full' : 'lg:w-2/5 w-full',
@@ -50,7 +50,7 @@
         >
           <div
             v-for="(item, index) in gridList2"
-            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
+            class="overflow-hidden cursor-pointer gap-5 flex flex-col rounded-[22px] border border-[#ffffff12] p-[20px] bg-[#141415] h-[260px] transition-all duration-300"
             @click="selectedGrid = item.id"
             :class="[
               selectedGrid == item.id ? 'lg:w-3/5 w-full' : 'lg:w-2/5 w-full',
@@ -73,11 +73,11 @@
         </div>
       </div>
 
-      <div class="w-full flex flex-col gap-8 justify-between items-center">
+      <div class="flex flex-col gap-8 justify-between items-center w-full">
         <div>
           <div class="overflow-hidden">
             <h1
-              class="fade-item text-[48px] font-bold lg:text-center lg:text-[36px]"
+              class="fade-item text-[48px] font-bold lg:text-center"
               style="
                 translate: none;
                 rotate: none;
@@ -91,7 +91,7 @@
           </div>
           <div class="overflow-hidden">
             <p
-              class="fade-item text-[30px] font-bold text-center lg:text-[22px]"
+              class="fade-item text-[30px] font-bold text-center"
               style="
                 translate: none;
                 rotate: none;
@@ -107,7 +107,7 @@
 
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[18px] text-center lg:text-[14px]"
+            class="fade-item text-[18px] text-center"
             style="
               translate: none;
               rotate: none;
