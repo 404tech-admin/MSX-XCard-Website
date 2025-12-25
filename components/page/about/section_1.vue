@@ -12,7 +12,7 @@
         >
           <div class="overflow-hidden">
             <p
-              class="fade-item pointer-events-none text-center font-bold text-[#FFFFFF] lg:text-[44px]"
+              class="fade-item pointer-events-none text-center font-bold text-[#FFFFFF]"
               style="
                 translate: none;
                 rotate: none;
@@ -26,7 +26,7 @@
           </div>
           <div class="overflow-hidden">
             <p
-              class="fade-item pointer-events-none text-center font-bold text-[#FFFFFF] lg:text-[44px]"
+              class="fade-item pointer-events-none text-center font-bold text-[#FFFFFF]"
               style="
                 translate: none;
                 rotate: none;
@@ -53,7 +53,7 @@
             </p>
           </div>
           <div
-            class="move-up pointer-events-auto mx-auto mt-12 flex w-full justify-center"
+            class="flex justify-center mx-auto mt-12 w-full pointer-events-auto move-up"
             style="
               translate: none;
               rotate: none;
@@ -71,6 +71,27 @@
               <span>Trade Now</span>
             </NuxtLink>
           </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full py-[32px] text-white grid grid-cols-1 lg:grid-cols-4 lg:gap-[24px] px-[24px]"
+      >
+        <div class="flex flex-col flex-1 items-center">
+          <span class="text-[32px] font-bold">$<span>106.58M</span></span
+          ><span class="mt-[6px] text-[16px]">24h Vol</span>
+        </div>
+        <div class="flex flex-col flex-1 items-center">
+          <span class="text-[32px] font-bold">$<span>22.27B</span></span
+          ><span class="mt-[6px] text-[16px]">Total RWA Trading Volume</span>
+        </div>
+        <div class="flex flex-col flex-1 items-center">
+          <span class="text-[32px] font-bold"><span>200+</span></span
+          ><span class="mt-[6px] text-[16px]">RWA Tokens</span>
+        </div>
+        <div class="flex flex-col flex-1 items-center">
+          <span class="text-[32px] font-bold"><span>171.5K</span></span
+          ><span class="mt-[6px] text-[16px]">Users</span>
         </div>
       </div>
     </div>

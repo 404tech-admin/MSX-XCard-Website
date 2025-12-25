@@ -7,7 +7,7 @@
         <NuxtLink
           to="https://msx.com"
           target="_blank"
-          class="flex items-center justify-between rounded-[16px] border p-[28px] text-[16px] lg:text-[18px] bg-[#141415] lg:gap-[32px] cursor-pointer"
+          class="flex items-center justify-between rounded-[16px] border border-[#ffffff12] p-[28px] text-[16px] bg-[#141415] lg:gap-[32px] cursor-pointer"
           style="
             translate: none;
             rotate: none;
@@ -22,7 +22,7 @@
         <NuxtLink
           to="https://msx.com"
           target="_blank"
-          class="flex items-center justify-between rounded-[16px] border p-[28px] text-[16px] lg:text-[18px] bg-[#141415] lg:gap-[32px] cursor-pointer"
+          class="flex items-center justify-between rounded-[16px] border p-[28px] border-[#ffffff12] text-[16px] bg-[#141415] lg:gap-[32px] cursor-pointer"
           style="
             translate: none;
             rotate: none;
@@ -37,7 +37,7 @@
         <NuxtLink
           to="https://msx.com/us-trading/1/20"
           target="_blank"
-          class="flex items-center justify-between rounded-[16px] border p-[28px] text-[16px] lg:text-[18px] bg-[#141415] lg:gap-[32px] cursor-pointer"
+          class="flex items-center justify-between rounded-[16px] border p-[28px] text-[16px] border-[#ffffff12] bg-[#141415] lg:gap-[32px] cursor-pointer"
           style="
             translate: none;
             rotate: none;
@@ -51,10 +51,10 @@
         </NuxtLink>
       </div>
 
-      <div class="w-full">
+      <div class="flex flex-col justify-center items-center w-full">
         <div class="overflow-hidden">
           <h1
-            class="fade-item text-[48px] font-bold lg:text-center lg:text-[36px]"
+            class="fade-item text-[48px] font-bold lg:text-center"
             style="
               translate: none;
               rotate: none;
@@ -68,7 +68,7 @@
         </div>
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[30px] font-bold lg:text-center lg:text-[22px]"
+            class="fade-item text-[30px] font-bold lg:text-center"
             style="
               translate: none;
               rotate: none;
@@ -82,7 +82,7 @@
         </div>
         <div class="overflow-hidden">
           <p
-            class="fade-item mt-[32px] text-[18px] text-[--color-text-weak] lg:text-center lg:text-[14px]"
+            class="fade-item mt-[32px] text-[18px] lg:text-center"
             style="
               translate: none;
               rotate: none;
@@ -111,7 +111,7 @@
   <div class="bg-black">
     <div class="mx-auto max-w-[1200px] lg:pt-[200px] px-[24px] pt-[80px]">
       <h1
-        class="text-center text-[48px] font-bold lg:text-[36px]"
+        class="text-center text-[48px] font-bold"
         style="
           translate: none;
           rotate: none;
@@ -124,7 +124,7 @@
       </h1>
 
       <p
-        class="mt-[6px] text-center text-[18px] text-[--color-text-weak] lg:text-[14px]"
+        class="mt-[6px] text-center text-[18px]"
         style="
           translate: none;
           rotate: none;
@@ -167,7 +167,7 @@
             transform: translate(0px, 0px);
           "
         >
-          <img src="/image/page/about/svg/icon5.svg" class="w-9" />
+          <img src="/image/page/about/svg/icon6.svg" class="w-9" />
           <span class="text-center text-[16px] font-bold">Always-On</span
           ><span class="text-center text-[14px]"
             >24/7 operation with instant failover for zero downtime</span
@@ -184,7 +184,7 @@
             transform: translate(0px, 0px);
           "
         >
-          <img src="/image/page/about/svg/icon5.svg" class="w-9" />
+          <img src="/image/page/about/svg/icon7.svg" class="w-9" />
           <span class="text-center text-[16px] font-bold">Triple-Shield</span
           ><span class="text-center text-[14px]"
             >Audited contracts + multisig + time-lock for attack
@@ -202,7 +202,7 @@
             transform: translate(0px, 0px);
           "
         >
-          <img src="/image/page/about/svg/icon5.svg" class="w-9" />
+          <img src="/image/page/about/svg/icon8.svg" class="w-9" />
           <span class="text-center text-[16px] font-bold">Direct Swaps</span
           ><span class="text-center text-[14px]"
             >Direct asset transfers, one-click wallet integration</span
