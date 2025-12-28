@@ -4,7 +4,87 @@
     </page-banner-video>
   </div>
 
-  <div
+  <div class="relative bg-black">
+    <page-banner-basic
+      :id="'02'"
+      :backgroundPosition="'50%, 50% 100%'"
+      :bgColor="'bg-transparent'"
+    >
+      <template v-slot:contentBox>
+        <div
+          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
+        >
+          <div class="flex flex-col justify-center">
+            <div class="text-4xl font-bold">X Card</div>
+            <div class="text-4xl font-bold">
+              Stablecoins Spending in Currency
+            </div>
+            <div class="text-4xl font-bold text-[#bcff2f]">
+              Connecting Stablecoins to the Real World Asset
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <img src="/image/page/home/section_1/1a.png" />
+          </div>
+
+          <div
+            class="grid grid-cols-2 col-span-1 gap-5 lg:grid-cols-4 lg:col-span-2"
+          >
+            <div class="w-full shadow-sm card">
+              <figure>
+                <img
+                  src="/image/page/home/section_1/1b.png"
+                  class="w-32 h-32"
+                />
+              </figure>
+              <div class="gap-5 items-center card-body">
+                <h2 class="card-title">Globalwide Spending</h2>
+              </div>
+            </div>
+
+            <div class="w-full shadow-sm card">
+              <figure>
+                <img
+                  src="/image/page/home/section_1/1c.png"
+                  class="w-32 h-32"
+                />
+              </figure>
+              <div class="gap-5 items-center card-body">
+                <h2 class="card-title">Instant Withdrawal</h2>
+              </div>
+            </div>
+
+            <div class="w-full shadow-sm card">
+              <figure>
+                <img
+                  src="/image/page/home/section_1/1d.png"
+                  class="w-32 h-32"
+                />
+              </figure>
+              <div class="gap-5 items-center card-body">
+                <h2 class="card-title">Free Transfer</h2>
+              </div>
+            </div>
+
+            <div class="w-full shadow-sm card">
+              <figure>
+                <img
+                  src="/image/page/home/section_1/1e.png"
+                  class="w-32 h-32"
+                />
+              </figure>
+              <div class="gap-5 items-center card-body">
+                <h2 class="card-title">Accessible US Stock</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </page-banner-basic>
+  </div>
+
+  <!-- <div
     :style="`
       background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
     `"
@@ -16,9 +96,9 @@
       :bgColor="'bg-transparent'"
     >
     </page-banner-basic>
-  </div>
+  </div> -->
 
-  <div
+  <!-- <div
     :style="`
       background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
     `"
@@ -30,7 +110,7 @@
       :bgColor="'bg-transparent'"
     >
     </page-banner-basic>
-  </div>
+  </div> -->
 
   <div class="bg-black h-full lg:h-[20vh]">
     <div class="grid grid-cols-1 gap-5 lg:grid-cols-3 containerBootstrap">
@@ -83,7 +163,6 @@
       background-image: black;
     `"
   >
-    <!-- :bgImage="'/image/page/banner/home.png'" -->
     <page-banner-basic
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
@@ -201,7 +280,6 @@
       background-image: black;
     `"
   >
-    <!-- :bgImage="'/image/page/banner/home.png'" -->
     <page-banner-basic
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
@@ -225,12 +303,7 @@
     </page-banner-basic>
   </div>
 
-  <div
-    :style="`
-      background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
-    `"
-  >
-    <!-- :bgImage="'/image/page/banner/home.png'" -->
+  <div class="bg-black">
     <page-banner-basic
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
@@ -239,19 +312,16 @@
     >
       <template v-slot:contentBox>
         <div
-          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
+          class="grid relative grid-cols-1 gap-20 w-full h-full lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex flex-col justify-center">
-            <div class="text-4xl font-bold">Get Ready To Have</div>
-            <div class="text-4xl font-bold">Best Smart</div>
-            <div class="text-4xl font-bold">Payments</div>
-            <div class="text-4xl font-bold">in The World</div>
+            <div class="text-4xl font-bold">
+              The Gateway to the Future of Digital Finance
+            </div>
           </div>
 
-          <div
-            class="flex justify-center items-center lg:justify-end lg:items-end"
-          >
-            <img src="/image/page/home/card_two.png" />
+          <div class="flex justify-center items-center">
+            <img src="/image/page/home/section_1/1.png" />
           </div>
         </div>
       </template>
