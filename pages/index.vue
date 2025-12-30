@@ -9,22 +9,23 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-transparent'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 py-20 lg:grid-cols-2 containerBootstrap lg:py-32"
         >
-          <div class="flex flex-col justify-center">
-            <div class="text-4xl font-bold">X Card</div>
-            <div class="text-4xl font-bold">
+          <div class="flex flex-col items-start justify-center">
+            <div class="text-[36px] lg:text-[48px] font-bold">X Card</div>
+            <div class="text-[24px] lg:text-[30px] font-bold">
               Stablecoins Spending in Currency
             </div>
-            <div class="text-4xl font-bold text-[#bcff2f]">
+            <div class="text-[24px] font-bold text-[#bcff2f]">
               Connecting Stablecoins to the Real World Asset
             </div>
           </div>
 
-          <div class="flex justify-center items-center">
+          <div class="flex items-center justify-center">
             <img src="/image/page/home/section_1/1a.png" />
           </div>
 
@@ -38,7 +39,7 @@
                   class="w-32 h-32"
                 />
               </figure>
-              <div class="gap-5 items-center card-body">
+              <div class="items-center gap-5 card-body">
                 <h2 class="card-title">Globalwide Spending</h2>
               </div>
             </div>
@@ -50,7 +51,7 @@
                   class="w-32 h-32"
                 />
               </figure>
-              <div class="gap-5 items-center card-body">
+              <div class="items-center gap-5 card-body">
                 <h2 class="card-title">Instant Withdrawal</h2>
               </div>
             </div>
@@ -62,7 +63,7 @@
                   class="w-32 h-32"
                 />
               </figure>
-              <div class="gap-5 items-center card-body">
+              <div class="items-center gap-5 card-body">
                 <h2 class="card-title">Free Transfer</h2>
               </div>
             </div>
@@ -74,7 +75,7 @@
                   class="w-32 h-32"
                 />
               </figure>
-              <div class="gap-5 items-center card-body">
+              <div class="items-center gap-5 card-body">
                 <h2 class="card-title">Accessible US Stock</h2>
               </div>
             </div>
@@ -83,34 +84,6 @@
       </template>
     </page-banner-basic>
   </div>
-
-  <!-- <div
-    :style="`
-      background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
-    `"
-  >
-    <page-banner-basic
-      :backgroundPosition="'50%, 50% 100%'"
-      :id="'02'"
-      :bgImage="'/image/page/home/xcard_1.jpeg'"
-      :bgColor="'bg-transparent'"
-    >
-    </page-banner-basic>
-  </div> -->
-
-  <!-- <div
-    :style="`
-      background-image: radial-gradient(at top left, #00D7FF2E 12%, #000218 76%);
-    `"
-  >
-    <page-banner-basic
-      :backgroundPosition="'50%, 50% 100%'"
-      :id="'02'"
-      :bgImage="'/image/page/home/xcard_2.jpeg'"
-      :bgColor="'bg-transparent'"
-    >
-    </page-banner-basic>
-  </div> -->
 
   <div class="bg-black h-full lg:h-[20vh]">
     <div class="grid grid-cols-1 gap-5 lg:grid-cols-3 containerBootstrap">
@@ -171,15 +144,17 @@
     >
       <template v-slot:contentBox>
         <div
-          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 py-20 lg:py-32 lg:grid-cols-2 containerBootstrap"
         >
-          <div class="flex flex-col justify-center items-start">
-            <div class="text-4xl font-bold">We Have The</div>
-            <div class="text-4xl font-bold">Most Users All Over</div>
-            <div class="text-4xl font-bold">The World</div>
+          <div class="flex flex-col items-start justify-center">
+            <div class="text-[36px] lg:text-[48px] font-bold">We Have The</div>
+            <div class="text-[24px] lg:text-[30px] font-bold">
+              Most Users All Over
+            </div>
+            <div class="text-[24px] lg:text-[30px] font-bold">The World</div>
           </div>
 
-          <div class="flex justify-center items-center h-full">
+          <div class="flex items-center justify-center h-full">
             <img src="/image/page/home/map2.png" />
           </div>
         </div>
@@ -188,11 +163,15 @@
   </div>
 
   <div class="bg-black">
-    <div class="flex flex-col gap-20 py-40 containerBootstrap">
+    <div
+      class="flex flex-col gap-10 py-20 lg:gap-20 lg:py-32 containerBootstrap"
+    >
       <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
-        <div class="flex flex-col justify-start items-start">
-          <div class="text-4xl font-bold">Our Services</div>
-          <div class="text-4xl font-bold">Anywhere & Anytime</div>
+        <div class="flex flex-col items-start justify-start">
+          <div class="text-[36px] lg:text-[48px] font-bold">Our Services</div>
+          <div class="text-[36px] lg:text-[48px] font-bold">
+            Anywhere & Anytime
+          </div>
         </div>
         <div>
           Maecenas dictum metus quis euismod feugiat. Sed accumsan maximus ex,
@@ -284,19 +263,25 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="grid relative grid-cols-1 w-full h-full lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-20 lg:gap-20 lg:grid-cols-2 lg:py-32 containerBootstrap"
         >
-          <div class="flex justify-center items-center h-full">
+          <div class="flex items-center justify-center h-full">
             <img src="/image/page/home/phone.png" />
           </div>
 
-          <div class="flex flex-col justify-center items-center lg:items-end">
-            <div class="text-4xl font-bold">Easier & Hassle-Free</div>
-            <div class="text-4xl font-bold">Invoice Control</div>
+          <div
+            class="flex flex-col items-center justify-center order-first lg:items-end lg:order-last"
+          >
+            <div class="text-[36px] lg:text-[48px] font-bold">
+              Easier & Hassle-Free
+            </div>
+            <div class="text-[36px] lg:text-[48px] font-bold">
+              Invoice Control
+            </div>
           </div>
         </div>
       </template>
@@ -308,19 +293,19 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-transparent'"
-      :isCustomHeight="'80vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="grid relative grid-cols-1 gap-20 w-full h-full lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-20 lg:gap-20 lg:grid-cols-2 lg:py-32 containerBootstrap"
         >
           <div class="flex flex-col justify-center">
-            <div class="text-4xl font-bold">
+            <div class="text-[36px] lg:text-[48px] font-bold">
               The Gateway to the Future of Digital Finance
             </div>
           </div>
 
-          <div class="flex justify-center items-center">
+          <div class="flex items-center justify-center">
             <img src="/image/page/home/section_1/1.png" />
           </div>
         </div>

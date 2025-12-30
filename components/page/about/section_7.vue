@@ -1,12 +1,12 @@
 <template>
   <div class="bg-black">
     <div
-      class="mx-auto flex max-w-[1200px] lg:flex-row flex-col items-center lg:pt-[128px] gap-[137px] lg:gap-[40px] px-[24px] pt-[80px]"
+      class="mx-auto flex max-w-[1200px] lg:flex-row flex-col items-center lg:pt-[128px] gap-[137px] lg:gap-[40px] containerBootstrap pt-[80px]"
     >
       <div class="flex flex-col gap-5 justify-center items-center w-full">
         <div class="overflow-hidden">
           <h1
-            class="fade-item text-[48px] font-bold text-center"
+            class="fade-item text-[36px] lg:text-[48px] font-bold text-center"
             style="
               translate: none;
               rotate: none;
@@ -21,7 +21,7 @@
 
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[30px] font-bold text-center"
+            class="fade-item text-[24px] lg:text-[30px] font-bold text-center"
             style="
               translate: none;
               rotate: none;
@@ -36,7 +36,7 @@
 
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[18px] text-center"
+            class="fade-item text-[16px] lg:text-[18px] text-center"
             style="
               translate: none;
               rotate: none;

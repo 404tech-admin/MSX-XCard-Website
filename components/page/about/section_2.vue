@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div
-      class="mx-auto flex max-w-[1200px] lg:flex-row flex-col items-center lg:pt-[128px] gap-[137px] lg:gap-[40px] px-[24px] pt-[80px]"
+      class="mx-auto flex max-w-[1200px] lg:flex-row flex-col items-center lg:pt-[128px] gap-[137px] lg:gap-[40px] containerBootstrap pt-[80px]"
     >
       <div class="flex flex-col gap-[16px] w-full">
         <div
@@ -73,11 +73,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-8 justify-between items-center w-full">
+      <div class="flex flex-col items-center justify-between w-full gap-8">
         <div>
           <div class="overflow-hidden">
             <h1
-              class="fade-item text-[48px] font-bold lg:text-center"
+              class="fade-item text-[36px] lg:text-[48px] font-bold lg:text-center"
               style="
                 translate: none;
                 rotate: none;
@@ -91,7 +91,7 @@
           </div>
           <div class="overflow-hidden">
             <p
-              class="fade-item text-[30px] font-bold text-center"
+              class="fade-item text-[24px] lg:text-[30px] font-bold text-center"
               style="
                 translate: none;
                 rotate: none;
@@ -107,7 +107,7 @@
 
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[18px] text-center"
+            class="fade-item text-[16px] lg:text-[18px] text-center"
             style="
               translate: none;
               rotate: none;

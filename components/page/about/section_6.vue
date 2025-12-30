@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black">
-    <div class="relative min-h-[160px] px-[50px] lg:px-[24px]">
+    <div class="relative min-h-[160px] px-[50px] lg:containerBootstrap">
       <div
         class="swiper swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
         style="height: auto"

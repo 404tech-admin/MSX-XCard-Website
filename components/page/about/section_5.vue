@@ -1,9 +1,9 @@
 <template>
   <div class="bg-black">
     <div
-      class="mx-auto pb-[128px] max-w-[1200px] lg:pt-[200px] px-[24px] pt-[80px]"
+      class="mx-auto pb-[128px] max-w-[1200px] lg:pt-[200px] containerBootstrap pt-[80px]"
     >
-      <div class="text-center text-[48px] font-bold lg:text-[36px]">
+      <div class="text-center text-[36px] lg:text-[48px] font-bold">
         MSX FAQ
       </div>
       <div class="mt-[64px] lg:mt-[40px]">
@@ -11,7 +11,8 @@
           class="flex w-full cursor-pointer items-center justify-between border-b py-[28px]"
         >
           <div tabindex="0" class="collapse">
-            <span class="text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
+            <span
+              class="text-[16px] lg:text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
               >What is MSX?</span
             >
             <span class="collapse-content text-[14px] lg:text-[16px] px-0!">
@@ -33,7 +34,8 @@
           class="flex w-full cursor-pointer items-center justify-between border-b py-[28px]"
         >
           <div tabindex="0" class="collapse">
-            <span class="text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
+            <span
+              class="text-[16px] lg:text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
               >Which tokens are currently available for trading?</span
             >
             <span class="collapse-content text-[14px] lg:text-[16px] px-0!">
@@ -55,7 +57,8 @@
           class="flex w-full cursor-pointer items-center justify-between border-b py-[28px]"
         >
           <div tabindex="0" class="collapse">
-            <span class="text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
+            <span
+              class="text-[16px] lg:text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
               >How are dividends distributed?</span
             >
             <span class="collapse-content text-[14px] lg:text-[16px] px-0!">
@@ -69,7 +72,8 @@
           class="flex w-full cursor-pointer items-center justify-between border-b py-[28px]"
         >
           <div tabindex="0" class="collapse">
-            <span class="text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
+            <span
+              class="text-[16px] lg:text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
               >What are RWA perpetual contracts?</span
             >
             <span class="collapse-content text-[14px] lg:text-[16px] px-0!">
@@ -83,7 +87,8 @@
           class="flex w-full cursor-pointer items-center justify-between border-b py-[28px]"
         >
           <div tabindex="0" class="collapse">
-            <span class="text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
+            <span
+              class="text-[16px] lg:text-[18px] lg:text-[22px] collapse-title py-0! px-0!"
               >What is the trading fee for MSX?</span
             >
             <span class="collapse-content text-[14px] lg:text-[16px] px-0!">
