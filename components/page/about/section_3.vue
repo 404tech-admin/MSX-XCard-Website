@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div
-      class="mx-auto flex flex-col lg:flex-row max-w-[1200px] items-center gap-[160px] lg:pt-[200px] lg:gap-[40px] px-[24px] pt-[80px]"
+      class="mx-auto flex flex-col lg:flex-row max-w-[1200px] items-center gap-[160px] lg:pt-[200px] lg:gap-[40px] containerBootstrap pt-[80px]"
     >
       <div class="flex flex-col gap-[40px] w-full">
         <NuxtLink
@@ -51,10 +51,10 @@
         </NuxtLink>
       </div>
 
-      <div class="flex flex-col justify-center items-center w-full">
+      <div class="flex flex-col items-center justify-center w-full">
         <div class="overflow-hidden">
           <h1
-            class="fade-item text-[48px] font-bold lg:text-center"
+            class="fade-item text-[36px] lg:text-[48px] font-bold text-center"
             style="
               translate: none;
               rotate: none;
@@ -68,7 +68,7 @@
         </div>
         <div class="overflow-hidden">
           <p
-            class="fade-item text-[30px] font-bold lg:text-center"
+            class="fade-item text-[24px] lg:text-[30px] font-bold lg:text-center"
             style="
               translate: none;
               rotate: none;
@@ -82,7 +82,7 @@
         </div>
         <div class="overflow-hidden">
           <p
-            class="fade-item mt-[32px] text-[18px] lg:text-center"
+            class="fade-item mt-[32px] text-[16px] lg:text-[18px] lg:text-center"
             style="
               translate: none;
               rotate: none;
@@ -109,9 +109,11 @@
   </div>
 
   <div class="bg-black">
-    <div class="mx-auto max-w-[1200px] lg:pt-[200px] px-[24px] pt-[80px]">
+    <div
+      class="mx-auto max-w-[1200px] lg:pt-[200px] containerBootstrap pt-[80px]"
+    >
       <h1
-        class="text-center text-[48px] font-bold"
+        class="text-center text-[36px] lg:text-[48px] font-bold"
         style="
           translate: none;
           rotate: none;
@@ -124,7 +126,7 @@
       </h1>
 
       <p
-        class="mt-[6px] text-center text-[18px]"
+        class="mt-[6px] text-center text-[16px] lg:text-[18px]"
         style="
           translate: none;
           rotate: none;

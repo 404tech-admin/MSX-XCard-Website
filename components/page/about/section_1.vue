@@ -8,7 +8,7 @@
         class="mx-auto flex w-full max-w-[1200px] items-center justify-center gap-20 lg:flex-col-reverse lg:items-start lg:gap-6 lg:px-6"
       >
         <div
-          class="pointer-events-none relative mt-10 flex w-full flex-col items-center justify-center text-[60px]"
+          class="pointer-events-none relative mt-10 flex w-full flex-col items-center justify-center text-[48px] lg:text-[60px]"
         >
           <div class="overflow-hidden">
             <p
@@ -40,7 +40,7 @@
           </div>
           <div class="overflow-hidden">
             <p
-              class="fade-item pointer-events-none mt-[18px] text-center text-[18px] text-[#8D8D8D]"
+              class="fade-item pointer-events-none mt-[18px] text-center text-[16px] lg:text-[18px] text-[#8D8D8D]"
               style="
                 translate: none;
                 rotate: none;
@@ -53,7 +53,7 @@
             </p>
           </div>
           <div
-            class="flex justify-center mx-auto mt-12 w-full pointer-events-auto move-up"
+            class="flex justify-center w-full mx-auto mt-12 pointer-events-auto move-up"
             style="
               translate: none;
               rotate: none;
@@ -75,21 +75,21 @@
       </div>
 
       <div
-        class="w-full py-[32px] text-white grid grid-cols-1 lg:grid-cols-4 lg:gap-[24px] px-[24px]"
+        class="w-full py-[32px] text-white grid grid-cols-1 lg:grid-cols-4 lg:gap-[24px] containerBootstrap"
       >
-        <div class="flex flex-col flex-1 items-center">
+        <div class="flex flex-col items-center flex-1">
           <span class="text-[32px] font-bold">$<span>106.58M</span></span
           ><span class="mt-[6px] text-[16px]">24h Vol</span>
         </div>
-        <div class="flex flex-col flex-1 items-center">
+        <div class="flex flex-col items-center flex-1">
           <span class="text-[32px] font-bold">$<span>22.27B</span></span
           ><span class="mt-[6px] text-[16px]">Total RWA Trading Volume</span>
         </div>
-        <div class="flex flex-col flex-1 items-center">
+        <div class="flex flex-col items-center flex-1">
           <span class="text-[32px] font-bold"><span>200+</span></span
           ><span class="mt-[6px] text-[16px]">RWA Tokens</span>
         </div>
-        <div class="flex flex-col flex-1 items-center">
+        <div class="flex flex-col items-center flex-1">
           <span class="text-[32px] font-bold"><span>171.5K</span></span
           ><span class="mt-[6px] text-[16px]">Users</span>
         </div>

@@ -8,7 +8,7 @@
         "
       >
         <p class="text-center text-[44px] font-bold text-white">Contact us</p>
-        <span class="mt-[4px] text-center text-[18px] text-white"
+        <span class="mt-[4px] text-center text-[16px] lg:text-[18px] text-white"
           >Contact Our Team</span
         >
       </div>
