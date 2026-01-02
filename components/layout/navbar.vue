@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 z-50 text-white bg-black navbar">
+  <div class="absolute top-0 z-50 text-white bg-transparent navbar">
     <div class="navbar-start">
       <div class="dropdown">
         <div

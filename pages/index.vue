@@ -2,6 +2,33 @@
   <div class="relative bg-black">
     <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
     </page-banner-video>
+
+    <div
+      class="absolute bottom-[5vh] grid grid-cols-1 gap-5 lg:grid-cols-4 containerBootstrap"
+    >
+      <div></div>
+
+      <div class="card bg-[#3F3F17] w-full h-[20vh] shadow-sm">
+        <div class="gap-5 card-body">
+          <h2 class="card-title">Funding</h2>
+          <p>Stablecoins credited in seconds</p>
+        </div>
+      </div>
+
+      <div class="card bg-[#3F3F17] w-full shadow-sm">
+        <div class="gap-5 card-body">
+          <h2 class="card-title">Trading</h2>
+          <p>U.S. Stock RWA</p>
+        </div>
+      </div>
+
+      <div class="card bg-[#3F3F17] w-full shadow-sm">
+        <div class="gap-5 card-body">
+          <h2 class="card-title">Withdrawal</h2>
+          <p>Global usage with the X Card</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="relative bg-black">
@@ -82,33 +109,6 @@
     </page-banner-basic>
   </div>
 
-  <div class="bg-black h-full lg:h-[20vh]">
-    <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 containerBootstrap">
-      <div></div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Funding</h2>
-          <p>Stablecoins credited in seconds</p>
-        </div>
-      </div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Trading</h2>
-          <p>U.S. Stock RWA</p>
-        </div>
-      </div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Withdrawal</h2>
-          <p>Global usage with the X Card</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div
     :style="`
       background-image: black;
@@ -118,7 +118,7 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
@@ -131,8 +131,8 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/6.png" />
+          <div class="flex items-end justify-end w-full h-full">
+            <img src="/image/page/home/section_2/2.png" class="w-[30vw]" />
           </div>
         </div>
       </template>
@@ -148,14 +148,14 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
           class="relative grid w-full h-full grid-cols-1 py-20 lg:gap-40 lg:py-32 lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/4.png" />
+            <img src="/image/page/home/section_3/1.png" />
           </div>
 
           <div class="flex flex-col items-end justify-center">
@@ -178,7 +178,7 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
@@ -215,7 +215,7 @@
           class="relative grid w-full h-full grid-cols-1 gap-10 py-20 lg:gap-40 lg:grid-cols-2 lg:py-32 containerBootstrap"
         >
           <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/1.png" />
+            <img src="/image/page/home/section_3/3.png" />
           </div>
 
           <div
