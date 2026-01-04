@@ -12,6 +12,7 @@
         loop="1"
         autoplay="1"
         muted="1"
+        playsinline
         style="visibility: visible; width: 100%; height: 100%"
       >
         <source :src="videoUrl" type="video/mp4" />
