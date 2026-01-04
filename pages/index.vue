@@ -1,10 +1,27 @@
 <template>
-  <div class="relative bg-black">
+  <div class="relative z-50 bg-black">
     <page-banner-video :videoUrl="'/image/page/home/bannerVideo.mp4'">
     </page-banner-video>
+
+    <div class="relative containerBootstrap">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-5 gap-5 lg:absolute lg:bottom-[-20vh] bg-[#444343] w-full"
+      >
+        <div class="flex items-center justify-center w-full lg:col-span-2">
+          <img src="/image/page/home/section_3/4.png" class="object-cover" />
+        </div>
+
+        <div class="w-full shadow-sm lg:col-span-3 card">
+          <div class="gap-5 card-body">
+            <h2 class="card-title">Funding</h2>
+            <p>Stablecoins credited in seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="relative bg-black">
+  <div class="relative bg-black lg:pt-[15vh]">
     <page-banner-basic
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
@@ -13,7 +30,7 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 py-20 lg:grid-cols-2 containerBootstrap lg:py-32"
+          class="relative grid w-full h-full grid-cols-1 py-10 lg:grid-cols-2 containerBootstrap lg:py-32"
         >
           <div class="flex flex-col items-start justify-center">
             <div class="text-[36px] lg:text-[48px] font-bold">X Card</div>
@@ -82,33 +99,6 @@
     </page-banner-basic>
   </div>
 
-  <div class="bg-black h-full lg:h-[20vh]">
-    <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 containerBootstrap">
-      <div></div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Funding</h2>
-          <p>Stablecoins credited in seconds</p>
-        </div>
-      </div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Trading</h2>
-          <p>U.S. Stock RWA</p>
-        </div>
-      </div>
-
-      <div class="card bg-[#bcff2f40] w-full shadow-sm">
-        <div class="gap-5 card-body">
-          <h2 class="card-title">Withdrawal</h2>
-          <p>Global usage with the X Card</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div
     :style="`
       background-image: black;
@@ -118,11 +108,11 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 py-20 lg:py-32 lg:gap-40 lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 py-10 lg:py-32 lg:gap-40 lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex flex-col items-start justify-center">
             <div class="text-[36px] lg:text-[48px] font-bold">Funding</div>
@@ -131,8 +121,11 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/6.png" />
+          <div class="flex items-end justify-end w-full h-full">
+            <img
+              src="/image/page/home/section_2/2.png"
+              class="w-full lg:w-[30vw]"
+            />
           </div>
         </div>
       </template>
@@ -148,17 +141,19 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 py-20 lg:gap-40 lg:py-32 lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-10 lg:gap-40 lg:py-32 lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/4.png" />
+            <img src="/image/page/home/section_3/1.png" />
           </div>
 
-          <div class="flex flex-col items-end justify-center">
+          <div
+            class="flex flex-col justify-center order-first lg:items-end lg:order-last"
+          >
             <div class="text-[36px] lg:text-[48px] font-bold">Trading</div>
             <div class="text-[24px] lg:text-[30px] font-bold">
               U.S. Stock RWA
@@ -178,11 +173,11 @@
       :id="'02'"
       :backgroundPosition="'50%, 50% 100%'"
       :bgColor="'bg-black'"
-      :isCustomHeight="'60vh'"
+      :isCustomHeight="'100%'"
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 py-20 lg:py-32 lg:gap-40 lg:grid-cols-2 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-10 lg:py-32 lg:gap-40 lg:grid-cols-2 containerBootstrap"
         >
           <div class="flex flex-col items-start justify-center">
             <div class="text-[36px] lg:text-[48px] font-bold">Withdrawal</div>
@@ -212,16 +207,16 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 gap-10 py-20 lg:gap-40 lg:grid-cols-2 lg:py-32 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-10 lg:gap-40 lg:grid-cols-2 lg:py-32 containerBootstrap"
         >
           <div class="flex items-center justify-center h-full">
-            <img src="/image/page/home/section_3/1.png" />
+            <img src="/image/page/home/section_3/3.png" />
           </div>
 
           <div
             class="flex flex-col items-center justify-center order-first lg:items-end lg:order-last"
           >
-            <div class="text-[24px] lg:text-[30px] font-bold text-end">
+            <div class="text-[24px] lg:text-[30px] font-bold lg:text-end">
               X makes Global Asset Allocation Within Reach
             </div>
           </div>
@@ -239,7 +234,7 @@
     >
       <template v-slot:contentBox>
         <div
-          class="relative grid w-full h-full grid-cols-1 gap-10 py-20 lg:gap-40 lg:grid-cols-2 lg:py-32 containerBootstrap"
+          class="relative grid w-full h-full grid-cols-1 gap-10 py-10 lg:gap-40 lg:grid-cols-2 lg:py-32 containerBootstrap"
         >
           <div class="flex flex-col justify-center">
             <div class="text-[24px] lg:text-[30px] font-bold">

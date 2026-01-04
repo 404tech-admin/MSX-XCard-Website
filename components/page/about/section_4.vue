@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto pt-32 lg:pt-[200px] bg-black">
+  <div class="mx-auto pt-32 lg:pt-[200px] bg-black relative">
     <h1
       class="move-up text-center text-[36px] lg:text-[48px] font-bold"
       style="
@@ -38,10 +38,7 @@
         <div
           class="mt-10 w-full overflow-hidden whitespace-nowrap border-b border-t border-[#ffffff12] py-5"
         >
-          <NuxtMarquee
-            class="flex items-center animate-scroll-row"
-            style="animation-duration: 30s; animation-play-state: running"
-          >
+          <NuxtMarquee class="flex items-center animate-scroll-row">
             <div
               class="mx-2.5 shrink-0 rounded-[56px] bg-[--color-text-high] px-12 py-4 lg:px-4"
             >
