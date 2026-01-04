@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen pointer-events-none"></div>
+  <div class="pointer-events-none h-[80vh]"></div>
 
   <div class="absolute top-0 bottom-0 w-full h-[80vh] bg-cover">
     <div class="relative w-full h-full">

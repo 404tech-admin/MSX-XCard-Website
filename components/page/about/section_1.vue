@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-16 bg-black">
+  <div class="bg-black">
     <div
       class="relative flex flex-col h-[80vh] items-center justify-start gap-20 overflow-hidden bg-black bg-cover bg-center pb-10 pt-40 lg:flex-col"
       style="background-image: url('/image/page/about/top_bg-CDD65lnQ.png')"

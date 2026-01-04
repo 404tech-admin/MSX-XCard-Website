@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white">
+  <div class="pt-20 text-white bg-black">
     <div class="flex flex-col gap-[40px] px-[16px] lg:gap-0">
       <div
         class="flex h-[180px] flex-col justify-center bg-cover bg-center"

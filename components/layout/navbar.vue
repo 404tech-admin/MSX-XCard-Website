@@ -1,52 +1,50 @@
 <template>
-  <div class="absolute top-0 z-50 text-white bg-transparent navbar">
+  <div class="absolute top-0 py-5 text-white bg-transparent z-100 navbar">
     <div class="navbar-start">
-      <div class="dropdown">
-        <div
-          tabindex="0"
-          role="button"
-          class="btn lg:btn-md btn-sm btn-ghost lg:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
+      <!-- mobile -->
+      <div
+        @click="openMobileNav()"
+        class="cursor-pointer xl:hidden btn btn-ghost"
+        style="z-index: 9999"
+      >
+        <div>
+          <i class="fa-solid fa-bars fa-xl"></i>
         </div>
+      </div>
 
-        <ul
-          tabindex="-1"
-          class="z-50 p-2 mt-3 border border-white shadow menu menu-sm dropdown-content secondary-bg-color rounded-box w-52"
-        >
-          <li>
-            <NuxtLink :to="locale === 'cn' ? '/' : `/${locale}`">
+      <!-- mobile drop down -->
+      <div id="mobileNavDropdown" class="absolute xl:hidden">
+        <ul class="items-center w-screen gap-5 menu menu-vertical">
+          <li class="">
+            <NuxtLink
+              @click="openMobileNav()"
+              :to="locale === 'cn' ? '/' : `/${locale}`"
+              class="text-xl font-jetbrains"
+            >
               {{ $t("navbar.home") }}
             </NuxtLink>
           </li>
-          <li>
-            <NuxtLink :to="locale === 'cn' ? '/about' : `/${locale}/about`">{{
-              $t("navbar.about")
-            }}</NuxtLink>
-          </li>
-          <li>
+          <li class="">
             <NuxtLink
-              :to="locale === 'cn' ? '/contact_us' : `/${locale}/contact_us`"
-              >{{ $t("navbar.contact_us") }}</NuxtLink
+              @click="openMobileNav()"
+              :to="locale === 'cn' ? '/about' : `/${locale}/about`"
+              class="text-xl font-jetbrains"
             >
+              {{ $t("navbar.about") }}
+            </NuxtLink>
+          </li>
+          <li class="">
+            <NuxtLink
+              @click="openMobileNav()"
+              :to="locale === 'cn' ? '/contact_us' : `/${locale}/contact_us`"
+              class="text-xl font-jetbrains"
+            >
+              {{ $t("navbar.contact_us") }}
+            </NuxtLink>
           </li>
         </ul>
       </div>
 
-      <!-- <a class="text-lg lg:text-xl">{{ $t("navbar.logo") }}</a> -->
       <NuxtLink
         :to="locale === 'cn' ? '/' : `/${locale}`"
         class="text-lg lg:text-xl"
@@ -137,16 +135,57 @@ export default {
     };
   },
   data() {
-    return {};
+    return { navbarOneState: false };
   },
   methods: {
     changeLanguage(lang) {
       this.setLocale(lang);
       console.log(this.c_wallet_address);
     },
+    openMobileNav() {
+      if (!this.navbarOneState) {
+        var element = document.getElementById("mobileNavDropdown");
+        document.body.classList.add("fixed");
+        element.classList.add("open");
+        this.navbarOneState = !this.navbarOneState;
+      } else {
+        var element = document.getElementById("mobileNavDropdown");
+        document.body.classList.remove("fixed");
+        element.classList.remove("open");
+        this.navbarOneState = !this.navbarOneState;
+      }
+    },
   },
   mounted() {},
 };
 </script>
 
-<style></style>
+<style lang="scss">
+#mobileNavDropdown {
+  opacity: 0;
+  width: 100%;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #000000, #000000);
+  isolation: isolate;
+  z-index: 9998;
+  transition: 0.5s ease;
+  pointer-events: none;
+
+  overflow: scroll;
+  .menu {
+    width: 100%;
+  }
+  &.open {
+    height: 100vh;
+    opacity: 1;
+    pointer-events: unset !important;
+  }
+  ul {
+    position: absolute;
+    top: 20vh;
+    font-size: 16px;
+  }
+}
+</style>
